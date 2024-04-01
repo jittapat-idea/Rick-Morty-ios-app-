@@ -8,7 +8,7 @@
 import Foundation
 
 
-/// Represents unique API endpoint
+/// Represents unique API endpoint (สร้างประเภทของข้อมูลขึ้นมาใช้เอง)
 @frozen enum RMEndpoint: String {
     ///Endpoint to get character info
     case character //"character"
