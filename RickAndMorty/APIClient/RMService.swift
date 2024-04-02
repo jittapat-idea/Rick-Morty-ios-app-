@@ -18,8 +18,11 @@ final class RMService {
     /// เรียก API ของ Rick และ Morty
     /// - Parameters:
     ///   - request: request instance
+    ///   - Type: type of object we expect to get back
     ///   - completion: Callback(ตอบกลับ) ด้วย ข้อมูล หรือ error
-    public func execute(_ request: RMRequest ,completion: @escaping() -> Void){
-        
+    public func execute<T:Codable>(
+        _ request: RMRequest ,
+        expecting type: T.Type,
+        completion: @escaping(Result<T,Error>) -> Void){
     }
 }
